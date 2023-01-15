@@ -1,0 +1,127 @@
+:root {
+  --var-background: var(--var-background);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #144272;
+  font-family: "Ubuntu", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background-image: url(/css/img/dragon-scales.svg);
+  background-size: contain;
+  min-height: 100vh;
+}
+header {
+  left: 0;
+  top: 0;
+  min-width: 100vw;
+  min-height: 2.5rem;
+  border-bottom: 0.1rem solid #ccc;
+  padding: 1rem;
+  background-color: #0a2647;
+}
+header h1 {
+  color: #fff;
+  margin-left: 1.5rem;
+}
+.textTitle {
+  color: #ff6e31;
+}
+.fa-clock {
+  color: #fff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 650px;
+  padding: 0.5rem;
+  align-content: center;
+  border: 5px solid #fff;
+  border-radius: 1rem;
+  margin-top: 6rem;
+}
+.menu a {
+  margin: 1.5rem;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.menu a:hover::after {
+  width: 100%;
+  left: 0;
+}
+.timer {
+  margin-top: 1rem;
+  padding: 2rem;
+}
+.relogio {
+  font-size: 10rem;
+  color: #fff;
+}
+.btns-container {
+  margin-top: 1.2rem;
+}
+
+.btn {
+  background-color: transparent;
+  width: 10rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid #fff;
+  margin: 0.5rem;
+  color: #fff;
+  padding: 0.5rem;
+  transition: all 300ms ease-in-out;
+}
+.btn:hover {
+  background-color: #0a2647;
+  border-color: none;
+  cursor: pointer;
+}
+.pausado {
+  color: #ff6e31;
+}
+
+.form {
+  margin-top: 3rem;
+}
+
+.select {
+  font-size: 20px;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+label {
+  color: #fff;
+}
+select {
+  min-width: 5rem;
+  border: 0.4rem solid #0a2647;
+  border-radius: 0.2rem;
+}
